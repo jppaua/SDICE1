@@ -48,6 +48,8 @@ public class CardTrick {
                     break;
             case 3: userCardSuit = "Clubs";
                     break;
+            default: userCardSuit = "Invalid Input";
+                    break;
         }*/
         //hardcoding luckycard
         Card luckyCard = new Card();
