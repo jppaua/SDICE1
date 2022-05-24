@@ -27,9 +27,9 @@ public class CardTrick {
             magicHand[i] = new Card();
             
             //c.setValue(insert call to random number generator here)
-            magicHand[i].setValue((int)((Math.random()*(13-1))+1));
+            magicHand[i].setValue((int)((Math.random()*(14-1))+1));
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
-            magicHand[i].setSuit(Card.SUITS[(int)((Math.random()*(3-0))+0)]);
+            magicHand[i].setSuit(Card.SUITS[(int)((Math.random()*(4-0))+0)]);
         }
         
         //insert code to ask the user for Card value and suit, create their card
@@ -57,10 +57,11 @@ public class CardTrick {
         String userCardSuit = luckyCard.getSuit();
         
         
-        String winCondition = "Loser";
+        String winCondition = "You Lose! </3";
         // and search magicHand here
         for(int i=0;i<7;i++) {
             boolean valueMatch = false, suitMatch = false;
+            //System.out.println("card value " + magicHand[i].getValue() + " card suit" + magicHand[i].getSuit());
             if(userCardValue == magicHand[i].getValue()) {
                 valueMatch = true;
             }
@@ -68,7 +69,7 @@ public class CardTrick {
                 suitMatch = true;
             }
             if(valueMatch == true && suitMatch == true) {
-                winCondition = "Winner";
+                winCondition = "You Win! <3";
                 break;
             }
         }
