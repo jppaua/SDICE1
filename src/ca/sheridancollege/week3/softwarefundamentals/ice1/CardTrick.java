@@ -53,7 +53,7 @@ public class CardTrick {
         Card luckyCard = new Card();
         luckyCard.setValue(7);
         int userCardValue = luckyCard.getValue();
-        luckyCard.setSuit(3);
+        luckyCard.setSuit(Card.SUITS[3]);
         String userCardSuit = luckyCard.getSuit();
         
         
