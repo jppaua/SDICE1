@@ -52,7 +52,10 @@ public class CardTrick {
         //hardcoding luckycard
         Card luckyCard = new Card();
         luckyCard.setValue(7);
+        int userCardValue = luckyCard.getValue();
         luckyCard.setSuit(3);
+        String userCardSuit = luckyCard.getSuit();
+        
         
         String winCondition = "Loser";
         // and search magicHand here
