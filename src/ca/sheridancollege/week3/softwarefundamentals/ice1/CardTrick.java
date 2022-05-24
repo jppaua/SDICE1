@@ -19,6 +19,9 @@ public class CardTrick {
     {
         Card[] magicHand = new Card[7];
         
+        //hardcoding luckycard
+        
+        
         for (int i=0; i<magicHand.length; i++)
         {
             magicHand[i] = new Card();
@@ -30,7 +33,7 @@ public class CardTrick {
         }
         
         //insert code to ask the user for Card value and suit, create their card
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         System.out.println("Pick a card value from 1-13");
         int userCardValue = sc.nextInt();
         System.out.println("Pick a suit \n0=hearts, \n1=diamonds, \n2=spades, \n3=clubs");
@@ -45,7 +48,12 @@ public class CardTrick {
                     break;
             case 3: userCardSuit = "Clubs";
                     break;
-        }
+        }*/
+        //hardcoding luckycard
+        Card luckyCard = new Card();
+        luckyCard.setValue(7);
+        luckyCard.setSuit(3);
+        
         String winCondition = "Loser";
         // and search magicHand here
         for(int i=0;i<7;i++) {
